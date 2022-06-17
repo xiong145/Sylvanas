@@ -1,0 +1,16 @@
+2022-06-13 19:00:20 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-13 19:00:20 [main] INFO  c.r.gateway.RuoYiGatewayApplication - Starting RuoYiGatewayApplication using Java 11.0.12 on DESKTOP-3J9KQ2D with PID 21296 (E:\ABSpringJava\RuoYi-Cloud-Plus-master\ruoyi-gateway\target\classes started by xiong in E:\ABSpringJava\RuoYi-Cloud-Plus-master)
+2022-06-13 19:00:20 [main] INFO  c.r.gateway.RuoYiGatewayApplication - The following 1 profile is active: "dev"
+2022-06-13 19:00:22 [main] INFO  c.r.common.core.config.JacksonConfig - 初始化 jackson 配置
+2022-06-13 19:00:22 [main] INFO  c.r.c.r.config.RedisConfiguration - 初始化 redis 配置
+2022-06-13 19:00:23 [main] INFO  org.redisson.Version - Redisson 3.17.2
+2022-06-13 19:00:23 [redisson-netty-2-6] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2022-06-13 19:00:23 [redisson-netty-2-4] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for localhost/127.0.0.1:6379
+2022-06-13 19:00:28 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [Sentinel SpringCloudGateway] register SentinelGatewayFilter with order: -2147483648
+2022-06-13 19:00:28 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [Sentinel SpringCloudGateway] register SentinelGatewayBlockExceptionHandler
+2022-06-13 19:00:31 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP ruoyi-gateway 192.168.88.1:8080 register finished
+2022-06-13 19:00:31 [main] INFO  c.r.gateway.RuoYiGatewayApplication - Started RuoYiGatewayApplication in 13.906 seconds (JVM running for 15.997)
+2022-06-13 19:00:31 [main] INFO  c.a.c.n.r.NacosContextRefresher - listening config: dataId=ruoyi-gateway.yml, group=DEFAULT_GROUP
+2022-06-13 19:00:31 [main] INFO  c.a.c.n.r.NacosContextRefresher - listening config: dataId=application-common.yml, group=DEFAULT_GROUP
+2022-06-13 19:19:59 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+2022-06-13 19:19:59 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.

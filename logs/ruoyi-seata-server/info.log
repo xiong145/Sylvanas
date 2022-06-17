@@ -1,0 +1,91 @@
+2022-06-13 19:04:01 [main] INFO  i.s.server.SeataServerApplication - Starting SeataServerApplication using Java 11.0.12 on DESKTOP-3J9KQ2D with PID 1864 (E:\ABSpringJava\RuoYi-Cloud-Plus-master\ruoyi-visual\ruoyi-seata-server\target\classes started by xiong in E:\ABSpringJava\RuoYi-Cloud-Plus-master)
+2022-06-13 19:04:01 [main] INFO  i.s.server.SeataServerApplication - The following 1 profile is active: "dev"
+2022-06-13 19:04:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7091 (http)
+2022-06-13 19:04:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7091"]
+2022-06-13 19:04:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-13 19:04:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-13 19:04:02 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-13 19:04:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 871 ms
+2022-06-13 19:04:02 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2022-06-13 19:04:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/']
+2022-06-13 19:04:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/**/*.css']
+2022-06-13 19:04:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/**/*.js']
+2022-06-13 19:04:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/**/*.html']
+2022-06-13 19:04:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/**/*.map']
+2022-06-13 19:04:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/**/*.svg']
+2022-06-13 19:04:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/**/*.png']
+2022-06-13 19:04:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/**/*.ico']
+2022-06-13 19:04:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/console-fe/public/**']
+2022-06-13 19:04:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/api/v1/auth/login']
+2022-06-13 19:04:03 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48cbe1c9, org.springframework.security.web.context.SecurityContextPersistenceFilter@5b407336, org.springframework.security.web.header.HeaderWriterFilter@38d308e7, org.springframework.security.web.authentication.logout.LogoutFilter@3c34c491, io.seata.console.filter.JwtAuthenticationTokenFilter@67e628b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a262980, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@796e2187, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@578c99ac, org.springframework.security.web.session.SessionManagementFilter@166d576b, org.springframework.security.web.access.ExceptionTranslationFilter@1fcf73b9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a6a3fc4]
+2022-06-13 19:04:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7091"]
+2022-06-13 19:04:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7091 (http) with context path ''
+2022-06-13 19:04:03 [main] INFO  i.s.server.SeataServerApplication - Started SeataServerApplication in 3.152 seconds (JVM running for 4.236)
+2022-06-13 19:04:24 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-06-13 19:04:24 [main] INFO  i.s.c.rpc.netty.NettyServerBootstrap - Server started, service listen port: 8091
+2022-06-13 19:04:29 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2022-06-13 19:04:29 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of ceecd923-57b4-4442-a5af-ebc03a627065
+2022-06-13 19:04:29 [main] INFO  c.alibaba.nacos.common.remote.client - [ceecd923-57b4-4442-a5af-ebc03a627065]RpcClient init label, labels={module=naming, source=sdk}
+2022-06-13 19:04:29 [main] INFO  c.alibaba.nacos.common.remote.client - [ceecd923-57b4-4442-a5af-ebc03a627065]RpcClient init, ServerListFactory =com.alibaba.nacos.client.naming.core.ServerListManager
+2022-06-13 19:04:29 [main] INFO  c.alibaba.nacos.common.remote.client - [ceecd923-57b4-4442-a5af-ebc03a627065] Try to connect to server on start up, server: {serverIp='127.0.0.1', server main port=8848}
+2022-06-13 19:04:29 [main] INFO  c.alibaba.nacos.common.remote.client - [ceecd923-57b4-4442-a5af-ebc03a627065] Success to connect to server [127.0.0.1:8848] on start up,connectionId=1655118269437_127.0.0.1_63977
+2022-06-13 19:04:29 [main] INFO  c.alibaba.nacos.common.remote.client - [ceecd923-57b4-4442-a5af-ebc03a627065]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2022-06-13 19:04:29 [main] INFO  c.alibaba.nacos.common.remote.client - [ceecd923-57b4-4442-a5af-ebc03a627065]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$4
+2022-06-13 19:04:29 [main] INFO  c.alibaba.nacos.common.remote.client - [ceecd923-57b4-4442-a5af-ebc03a627065]Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2022-06-13 19:04:29 [main] INFO  c.alibaba.nacos.common.remote.client - [ceecd923-57b4-4442-a5af-ebc03a627065]Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcConnectionEventListener
+2022-06-13 19:04:29 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] dev registering service ruoyi-seata-server with instance Instance{instanceId='null', ip='192.168.88.1', port=8091, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='default', serviceName='null', metadata={}}
+2022-06-13 19:04:29 [main] INFO  io.seata.server.ServerRunner - seata server started in 26519 millSeconds
+2022-06-13 19:05:06 [Druid-ConnectionPool-Create-2021148063] INFO  c.a.d.pool.DruidAbstractDataSource - {dataSource-1} failContinuous is true
+2022-06-13 19:05:24 [SpringApplicationShutdownHook] INFO  i.s.c.rpc.netty.NettyServerBootstrap - Shutting server down, the listen port: 8091
+2022-06-13 19:05:29 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] dev deregistering service ruoyi-seata-server with instance: Instance{instanceId='null', ip='192.168.88.1', port=8091, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='default', serviceName='null', metadata={}}
+2022-06-13 19:05:30 [NettyServerNIOWorker_1_1_24] INFO  i.s.c.r.p.server.RegTmProcessor - TM register success,message:RegisterTMRequest{applicationId='ruoyi-auth', transactionServiceGroup='ruoyi-auth-group'},channel:[id: 0x0b44767e, L:/192.168.88.1:8091 - R:/192.168.88.1:63998],client version:1.5.1
+2022-06-13 19:05:30 [ServerHandlerThread_1_1_500] INFO  i.s.c.r.p.server.RegRmProcessor - RM register success,message:RegisterRMRequest{resourceIds='null', applicationId='ruoyi-auth', transactionServiceGroup='ruoyi-auth-group'},channel:[id: 0x50fe1069, L:/192.168.88.1:8091 - R:/192.168.88.1:63999],client version:1.5.1
+2022-06-13 19:05:32 [NettyServerNIOWorker_1_1_24] INFO  i.s.c.r.n.AbstractNettyRemotingServer - 192.168.88.1:63998 to server channel inactive.
+2022-06-13 19:05:32 [NettyServerNIOWorker_1_2_24] INFO  i.s.c.r.n.AbstractNettyRemotingServer - 192.168.88.1:63999 to server channel inactive.
+2022-06-13 19:05:32 [NettyServerNIOWorker_1_1_24] INFO  i.s.c.r.n.AbstractNettyRemotingServer - remove channel:[id: 0x0b44767e, L:/192.168.88.1:8091 ! R:/192.168.88.1:63998]context:RpcContext{applicationId='ruoyi-auth', transactionServiceGroup='ruoyi-auth-group', clientId='ruoyi-auth:192.168.88.1:63998', channel=[id: 0x0b44767e, L:/192.168.88.1:8091 ! R:/192.168.88.1:63998], resourceSets=null}
+2022-06-13 19:05:32 [NettyServerNIOWorker_1_2_24] INFO  i.s.c.r.n.AbstractNettyRemotingServer - remove channel:[id: 0x50fe1069, L:/192.168.88.1:8091 ! R:/192.168.88.1:63999]context:RpcContext{applicationId='ruoyi-auth', transactionServiceGroup='ruoyi-auth-group', clientId='ruoyi-auth:192.168.88.1:63999', channel=[id: 0x50fe1069, L:/192.168.88.1:8091 ! R:/192.168.88.1:63999], resourceSets=null}
+2022-06-13 19:14:10 [main] INFO  i.s.server.SeataServerApplication - Starting SeataServerApplication using Java 11.0.12 on DESKTOP-3J9KQ2D with PID 15916 (E:\ABSpringJava\RuoYi-Cloud-Plus-master\ruoyi-visual\ruoyi-seata-server\target\classes started by xiong in E:\ABSpringJava\RuoYi-Cloud-Plus-master)
+2022-06-13 19:14:10 [main] INFO  i.s.server.SeataServerApplication - The following 1 profile is active: "dev"
+2022-06-13 19:14:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7091 (http)
+2022-06-13 19:14:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7091"]
+2022-06-13 19:14:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-13 19:14:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-13 19:14:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-13 19:14:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 777 ms
+2022-06-13 19:14:11 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2022-06-13 19:14:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/']
+2022-06-13 19:14:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/**/*.css']
+2022-06-13 19:14:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/**/*.js']
+2022-06-13 19:14:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/**/*.html']
+2022-06-13 19:14:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/**/*.map']
+2022-06-13 19:14:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/**/*.svg']
+2022-06-13 19:14:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/**/*.png']
+2022-06-13 19:14:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/**/*.ico']
+2022-06-13 19:14:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/console-fe/public/**']
+2022-06-13 19:14:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/api/v1/auth/login']
+2022-06-13 19:14:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d658aa8, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ba0dcba, org.springframework.security.web.header.HeaderWriterFilter@66851aa5, org.springframework.security.web.authentication.logout.LogoutFilter@2d2afc39, io.seata.console.filter.JwtAuthenticationTokenFilter@10280879, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38394e76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@386f88b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3472f3ab, org.springframework.security.web.session.SessionManagementFilter@8ab231, org.springframework.security.web.access.ExceptionTranslationFilter@3662c887, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@63d9e1a]
+2022-06-13 19:14:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7091"]
+2022-06-13 19:14:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7091 (http) with context path ''
+2022-06-13 19:14:11 [main] INFO  i.s.server.SeataServerApplication - Started SeataServerApplication in 2.999 seconds (JVM running for 3.9)
+2022-06-13 19:14:32 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-06-13 19:14:33 [main] INFO  i.s.c.rpc.netty.NettyServerBootstrap - Server started, service listen port: 8091
+2022-06-13 19:14:37 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2022-06-13 19:14:37 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of b7c28abc-9920-48df-986b-36b2a667bf74
+2022-06-13 19:14:37 [main] INFO  c.alibaba.nacos.common.remote.client - [b7c28abc-9920-48df-986b-36b2a667bf74]RpcClient init label, labels={module=naming, source=sdk}
+2022-06-13 19:14:37 [main] INFO  c.alibaba.nacos.common.remote.client - [b7c28abc-9920-48df-986b-36b2a667bf74]RpcClient init, ServerListFactory =com.alibaba.nacos.client.naming.core.ServerListManager
+2022-06-13 19:14:37 [main] INFO  c.alibaba.nacos.common.remote.client - [b7c28abc-9920-48df-986b-36b2a667bf74] Try to connect to server on start up, server: {serverIp='127.0.0.1', server main port=8848}
+2022-06-13 19:14:37 [main] INFO  c.alibaba.nacos.common.remote.client - [b7c28abc-9920-48df-986b-36b2a667bf74] Success to connect to server [127.0.0.1:8848] on start up,connectionId=1655118877704_127.0.0.1_64453
+2022-06-13 19:14:37 [main] INFO  c.alibaba.nacos.common.remote.client - [b7c28abc-9920-48df-986b-36b2a667bf74]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2022-06-13 19:14:37 [main] INFO  c.alibaba.nacos.common.remote.client - [b7c28abc-9920-48df-986b-36b2a667bf74]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$4
+2022-06-13 19:14:37 [main] INFO  c.alibaba.nacos.common.remote.client - [b7c28abc-9920-48df-986b-36b2a667bf74]Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2022-06-13 19:14:37 [main] INFO  c.alibaba.nacos.common.remote.client - [b7c28abc-9920-48df-986b-36b2a667bf74]Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcConnectionEventListener
+2022-06-13 19:14:37 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] dev registering service ruoyi-seata-server with instance Instance{instanceId='null', ip='192.168.88.1', port=8091, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='default', serviceName='null', metadata={}}
+2022-06-13 19:14:37 [main] INFO  io.seata.server.ServerRunner - seata server started in 26474 millSeconds
+2022-06-13 19:14:40 [NettyServerNIOWorker_1_1_24] INFO  i.s.c.r.p.server.RegTmProcessor - TM register success,message:RegisterTMRequest{applicationId='ruoyi-auth', transactionServiceGroup='ruoyi-auth-group'},channel:[id: 0x62286480, L:/192.168.88.1:8091 - R:/192.168.88.1:64457],client version:1.5.1
+2022-06-13 19:14:40 [ServerHandlerThread_1_1_500] INFO  i.s.c.r.p.server.RegRmProcessor - RM register success,message:RegisterRMRequest{resourceIds='null', applicationId='ruoyi-auth', transactionServiceGroup='ruoyi-auth-group'},channel:[id: 0x88c6c5c1, L:/192.168.88.1:8091 - R:/192.168.88.1:64458],client version:1.5.1
+2022-06-13 19:14:42 [SpringApplicationShutdownHook] INFO  i.s.c.rpc.netty.NettyServerBootstrap - Shutting server down, the listen port: 8091
+2022-06-13 19:14:47 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] dev deregistering service ruoyi-seata-server with instance: Instance{instanceId='null', ip='192.168.88.1', port=8091, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='default', serviceName='null', metadata={}}
+2022-06-13 19:14:50 [NettyServerNIOWorker_1_1_24] INFO  i.s.c.r.n.AbstractNettyRemotingServer - 192.168.88.1:64457 to server channel inactive.
+2022-06-13 19:14:50 [NettyServerNIOWorker_1_2_24] INFO  i.s.c.r.n.AbstractNettyRemotingServer - 192.168.88.1:64458 to server channel inactive.
+2022-06-13 19:14:50 [NettyServerNIOWorker_1_1_24] INFO  i.s.c.r.n.AbstractNettyRemotingServer - remove channel:[id: 0x62286480, L:/192.168.88.1:8091 ! R:/192.168.88.1:64457]context:RpcContext{applicationId='ruoyi-auth', transactionServiceGroup='ruoyi-auth-group', clientId='ruoyi-auth:192.168.88.1:64457', channel=[id: 0x62286480, L:/192.168.88.1:8091 ! R:/192.168.88.1:64457], resourceSets=null}
+2022-06-13 19:14:50 [NettyServerNIOWorker_1_2_24] INFO  i.s.c.r.n.AbstractNettyRemotingServer - remove channel:[id: 0x88c6c5c1, L:/192.168.88.1:8091 ! R:/192.168.88.1:64458]context:RpcContext{applicationId='ruoyi-auth', transactionServiceGroup='ruoyi-auth-group', clientId='ruoyi-auth:192.168.88.1:64458', channel=[id: 0x88c6c5c1, L:/192.168.88.1:8091 ! R:/192.168.88.1:64458], resourceSets=null}
