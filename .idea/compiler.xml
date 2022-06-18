@@ -6,22 +6,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sylvanas-gateway" />
         <module name="sylvanas-user-feign" />
+        <module name="sylvanas-gateway" />
         <module name="sylvanas-common-log" />
-        <module name="sylvanas-job" />
-        <module name="sylvanas-common-swagger" />
         <module name="sylvanas-common-alibaba-nacose" />
+        <module name="sylvanas-common-swagger" />
         <module name="sylvanas-user-service" />
-        <module name="sylvanas-minIo" />
-        <module name="sylvanas-oss" />
         <module name="sylvanas-common-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="sylvanas-job" target="8" />
-      <module name="sylvanas-minIo" target="8" />
-      <module name="sylvanas-oss" target="8" />
+      <module name="Sylvanas" target="8" />
+      <module name="sylvanas-common" target="8" />
+      <module name="sylvanas-common-alibaba" target="8" />
+      <module name="sylvanas-common-alibaba-nacose" target="8" />
+      <module name="sylvanas-common-core" target="8" />
+      <module name="sylvanas-common-log" target="8" />
+      <module name="sylvanas-common-swagger" target="8" />
+      <module name="sylvanas-gateway" target="8" />
+      <module name="sylvanas-user" target="8" />
+      <module name="sylvanas-user-feign" target="8" />
+      <module name="sylvanas-user-service" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
