@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Sylvanas.iml" filepath="$PROJECT_DIR$/Sylvanas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sylvanas-common/sylvanas-common.iml" filepath="$PROJECT_DIR$/sylvanas-common/sylvanas-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sylvanas-common/sylvanas-common-alibaba/sylvanas-common-alibaba.iml" filepath="$PROJECT_DIR$/sylvanas-common/sylvanas-common-alibaba/sylvanas-common-alibaba.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sylvanas-common/sylvanas-common-alibaba/sylvanas-common-alibaba-nacose/sylvanas-common-alibaba-nacose.iml" filepath="$PROJECT_DIR$/sylvanas-common/sylvanas-common-alibaba/sylvanas-common-alibaba-nacose/sylvanas-common-alibaba-nacose.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sylvanas-common/sylvanas-common-core/sylvanas-common-core.iml" filepath="$PROJECT_DIR$/sylvanas-common/sylvanas-common-core/sylvanas-common-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sylvanas-common/sylvanas-common-log/sylvanas-common-log.iml" filepath="$PROJECT_DIR$/sylvanas-common/sylvanas-common-log/sylvanas-common-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sylvanas-common/sylvanas-common-swagger/sylvanas-common-swagger.iml" filepath="$PROJECT_DIR$/sylvanas-common/sylvanas-common-swagger/sylvanas-common-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sylvanas-gateway/sylvanas-gateway.iml" filepath="$PROJECT_DIR$/sylvanas-gateway/sylvanas-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sylvanas-user/sylvanas-user.iml" filepath="$PROJECT_DIR$/sylvanas-user/sylvanas-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sylvanas-user/sylvanas-user-feign/sylvanas-user-feign.iml" filepath="$PROJECT_DIR$/sylvanas-user/sylvanas-user-feign/sylvanas-user-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sylvanas-user/sylvanas-user-service/sylvanas-user-service.iml" filepath="$PROJECT_DIR$/sylvanas-user/sylvanas-user-service/sylvanas-user-service.iml" />
+    </modules>
+  </component>
+</project>
