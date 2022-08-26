@@ -11,6 +11,10 @@
 
     <artifactId>sylvanas-user</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>sylvanas-user-feign</module>
+        <module>sylvanas-user-service</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
