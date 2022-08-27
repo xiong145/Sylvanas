@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: sylvanas-gateway
   profiles:
     active: @profiles.active@
 

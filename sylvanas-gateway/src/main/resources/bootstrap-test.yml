@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+    nacos:
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        namespace: ${spring.cloud.nacos.discovery.namespace}
+        group: ${spring.cloud.nacos.discovery.group}
+        file-extension: yml
+        refresh-enabled: true
+        shared-configs:
+          - data-id: sylvanas-gateway-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+            refresh: ${spring.cloud.nacos.config.refresh-enabled}
+          - data-id: sylvanas-redis-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+            refresh: ${spring.cloud.nacos.config.refresh-enabled}
+      discovery:
+        namespace: 82b2487c-64e0-491b-ad70-ea2411029c57
+        server-addr: 127.0.0.1:8849
+        group: SYLVANAS_GROUP
