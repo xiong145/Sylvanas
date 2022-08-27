@@ -9,11 +9,19 @@
         <module name="sylvanas-gateway" />
         <module name="sylvanas-user-feign" />
         <module name="sylvanas-common-log" />
+        <module name="sylvanas-job" />
         <module name="sylvanas-common-swagger" />
         <module name="sylvanas-common-alibaba-nacose" />
         <module name="sylvanas-user-service" />
+        <module name="sylvanas-minIo" />
+        <module name="sylvanas-oss" />
         <module name="sylvanas-common-core" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sylvanas-job" target="8" />
+      <module name="sylvanas-minIo" target="8" />
+      <module name="sylvanas-oss" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
