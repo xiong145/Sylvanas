@@ -1,0 +1,18 @@
+server:
+  port: 9420
+spring:
+  cloud:
+    loadbalander:
+      ribbon:
+        enable: false
+    config:
+      enabled: false
+    gateway:
+      routes:
+        - id: user
+          uri: http://localhost:9421
+          order: 1
+          predicates:
+            - Path=/sylvanas/user/**
+          filters:
+            - StripPrefix=1

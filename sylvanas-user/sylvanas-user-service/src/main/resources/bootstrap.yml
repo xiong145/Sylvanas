@@ -1,2 +1,5 @@
-server:
-  port: 9420
+spring:
+  application:
+    name: sylvanas-user
+  profiles:
+    active: @profiles.active@

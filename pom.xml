@@ -92,6 +92,13 @@
 <!--                <profiles.active>SYLVANAS_GROUP</profiles.active>-->
             </properties>
         </profile>
+        <profile>
+            <!-- 本地环境 -->
+            <id>local</id>
+            <properties>
+                <profiles.active>local</profiles.active>
+            </properties>
+        </profile>
     </profiles>
 </project>
 

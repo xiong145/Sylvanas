@@ -1,7 +1,5 @@
 spring:
   cloud:
-    config:
-      enabled: false
     nacos:
       config:
         server-addr: ${spring.cloud.nacos.discovery.server-addr}
@@ -15,7 +13,7 @@ spring:
           - data-id: sylvanas-redis-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
             refresh: ${spring.cloud.nacos.config.refresh-enabled}
       discovery:
-        namespace: b64c4833-42c0-452c-a983-af18afd13a1b
+        namespace: 0438399e-0ed6-4238-bcdf-670e71c833cb
         server-addr: 127.0.0.1:8849
         group: SYLVANAS_GROUP
 
