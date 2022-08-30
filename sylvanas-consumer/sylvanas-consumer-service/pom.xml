@@ -38,9 +38,21 @@
             <optional>true</optional>
         </dependency>
 
+<!--        本项目引入-->
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>sylvanas-user-dubbo-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>sylvanas-common-util</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>sylvanas-common-alibaba-nacose</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 <!--        以下版本问题-->
@@ -61,10 +73,6 @@
             <version>2.2.2</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>sylvanas-common-alibaba-nacose</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+
     </dependencies>
 </project>

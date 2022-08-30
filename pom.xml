@@ -16,6 +16,7 @@
         <spring-boot.version>2.7.2</spring-boot.version>
         <spring-cloud.version>2021.0.3</spring-cloud.version>
         <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version>
+        <hutool.version>5.8.3</hutool.version>
     </properties>
 
     <modules>
@@ -54,6 +55,11 @@
                 <scope>compile</scope>
             </dependency>
 
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -71,9 +77,9 @@
             <id>dev</id>
             <properties>
                 <profiles.active>dev</profiles.active>
-<!--                <profiles.namespace>e1e5d6c7-454b-45f3-8ebf-087497d6d833</profiles.namespace>-->
-<!--                <profiles.server-addr>10.202.116.98:8849</profiles.server-addr>-->
-<!--                <profiles.active>SYLVANAS_GROUP</profiles.active>-->
+                <!--                <profiles.namespace>e1e5d6c7-454b-45f3-8ebf-087497d6d833</profiles.namespace>-->
+                <!--                <profiles.server-addr>10.202.116.98:8849</profiles.server-addr>-->
+                <!--                <profiles.active>SYLVANAS_GROUP</profiles.active>-->
             </properties>
             <activation>
                 <!-- 设置默认激活这个配置 -->
@@ -85,9 +91,9 @@
             <id>pre</id>
             <properties>
                 <profiles.active>pre</profiles.active>
-<!--                <profiles.namespace>773a9ebd-7bd9-447d-afdb-f756014ae75f</profiles.namespace>-->
-<!--                <profiles.server-addr>10.202.116.98:8849</profiles.server-addr>-->
-<!--                <profiles.active>SYLVANAS_GROUP</profiles.active>-->
+                <!--                <profiles.namespace>773a9ebd-7bd9-447d-afdb-f756014ae75f</profiles.namespace>-->
+                <!--                <profiles.server-addr>10.202.116.98:8849</profiles.server-addr>-->
+                <!--                <profiles.active>SYLVANAS_GROUP</profiles.active>-->
             </properties>
         </profile>
         <profile>
@@ -95,9 +101,9 @@
             <id>test</id>
             <properties>
                 <profiles.active>test</profiles.active>
-<!--                <profiles.namespace>82b2487c-64e0-491b-ad70-ea2411029c57</profiles.namespace>-->
-<!--                <profiles.server-addr>10.202.116.98:8849</profiles.server-addr>-->
-<!--                <profiles.active>SYLVANAS_GROUP</profiles.active>-->
+                <!--                <profiles.namespace>82b2487c-64e0-491b-ad70-ea2411029c57</profiles.namespace>-->
+                <!--                <profiles.server-addr>10.202.116.98:8849</profiles.server-addr>-->
+                <!--                <profiles.active>SYLVANAS_GROUP</profiles.active>-->
             </properties>
         </profile>
         <profile>

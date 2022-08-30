@@ -16,6 +16,9 @@ import java.util.Map;
 @RequestMapping("consumer")
 public class consumerController {
 
+    /**
+     * dubbo调用user服务
+     */
     @Reference
     private UserProviderApiService userProviderApiService;
 
