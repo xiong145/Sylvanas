@@ -1,5 +1,5 @@
 server:
-  port: 9421
+  port: 9422
 
 #Rocketmq Config
 rocketmq:
@@ -30,4 +30,3 @@ rocketmq:
       consumeThreadMax: 32
       # 设置一次消费信息的条数，默认1
       consumeMessageBatchMaxSize: 1
-

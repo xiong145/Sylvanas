@@ -9,18 +9,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>sylvanas-user</artifactId>
+    <artifactId>sylvanas-consumer</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>sylvanas-user-feign</module>
-        <module>sylvanas-user-service</module>
-        <module>sylvanas-user-dubbo-api</module>
+        <module>sylvanas-consumer-service</module>
+        <module>sylvanas-consumer-feign</module>
+        <module>sylvanas-consumer-dubbo-api</module>
     </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-
 
 </project>

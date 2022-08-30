@@ -16,3 +16,11 @@ spring:
             - Path=/sylvanas/user/**
           filters:
             - StripPrefix=1
+
+        - id: consumer
+          uri: lb://sylvanas-consumer
+          order: 1
+          predicates:
+            - Path=/sylvanas/consumer/**
+          filters:
+            - StripPrefix=1

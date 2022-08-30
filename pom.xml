@@ -22,6 +22,7 @@
         <module>sylvanas-user</module>
         <module>sylvanas-common</module>
         <module>sylvanas-gateway</module>
+        <module>sylvanas-consumer</module>
     </modules>
 
 
