@@ -1,8 +1,10 @@
-package user.controller;
+package consumer.controller;
 
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import userInterface.UserProviderApiService;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,9 +16,19 @@ import java.util.Map;
 @RequestMapping("consumer")
 public class consumerController {
 
+    @Reference
+    private UserProviderApiService userProviderApiService;
+
+
+    @RequestMapping(value = "user", method = RequestMethod.GET)
+    public Map<String, Object> user() {
+        Map map = userProviderApiService.userApi();
+        return map;
+    }
+
 
     @RequestMapping(value = "consumer", method = RequestMethod.GET)
-    public Map<String, Object> user() {
+    public Map<String, Object> consumer() {
         HashMap hash = new HashMap<String, Object>() {{
             put("consumer", "admin");
         }};

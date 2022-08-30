@@ -19,18 +19,10 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <alibaba.nacos.version>2.0.4</alibaba.nacos.version>
-        <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version>
     </properties>
 
     <dependencies>
-        <!-- SpringCloud Alibaba 微服务 -->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-            <version>${spring-cloud-alibaba.version}</version>
-            <type>pom</type>
-            <scope>compile</scope>
-        </dependency>
+
         <!-- Alibaba Nacos 配置 -->
         <dependency>
             <groupId>com.alibaba.nacos</groupId>

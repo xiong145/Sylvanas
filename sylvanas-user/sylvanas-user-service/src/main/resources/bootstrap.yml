@@ -3,3 +3,19 @@ spring:
     name: sylvanas-user
   profiles:
     active: @profiles.active@
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+
+
+
+
+dubbo:
+  scan:
+    base-packages: com.sylvanas.user.service.serviceImpl
+  protocol:
+    dubbo:
+      name: dubbo
+      port: -1
+  registry:
+    address: spring-cloud://localhost

@@ -3,3 +3,16 @@ spring:
     name: sylvanas-consumer
   profiles:
     active: @profiles.active@
+  main:
+    allow-circular-references: true
+
+
+
+dubbo:
+  cloud:
+    subscribed-services: sylvanas-user
+  consumer:
+    check: false
+    loadbalance: "leastactive"
+  registry:
+    address: spring-cloud://localhost
