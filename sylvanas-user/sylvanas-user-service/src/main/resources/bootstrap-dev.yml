@@ -14,7 +14,9 @@ spring:
 #            refresh: ${spring.cloud.nacos.config.refresh-enabled}
           - data-id: sylvanas-rocketmq-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
             refresh: ${spring.cloud.nacos.config.refresh-enabled}
+          - data-id: sylvanas-redis-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+            refresh: ${spring.cloud.nacos.config.refresh-enabled}
       discovery:
-        namespace: 0438399e-0ed6-4238-bcdf-670e71c833cb
+        namespace: 64d9c4cf-d13f-43d1-a8f8-537784704eb2
         server-addr: 127.0.0.1:8849
         group: SYLVANAS_GROUP

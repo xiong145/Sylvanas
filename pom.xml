@@ -24,6 +24,7 @@
         <module>sylvanas-common</module>
         <module>sylvanas-gateway</module>
         <module>sylvanas-consumer</module>
+        <module>sylvanas-xxl-job</module>
     </modules>
 
 
