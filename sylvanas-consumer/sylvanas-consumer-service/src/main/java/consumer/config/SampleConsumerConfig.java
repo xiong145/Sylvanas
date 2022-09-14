@@ -62,6 +62,7 @@ public class SampleConsumerConfig {
         consumer.setConsumeThreadMax(consumeThreadMax);
         consumer.setConsumeMessageBatchMaxSize(consumeMessageBatchMaxSize);
         consumer.setAllocateMessageQueueStrategy(new AllocateMessageQueueAveragely());
+//        consumer.setMessageModel();
         /**
          * 设置consumer第一次启动是从队列头部开始还是队列尾部开始
          * 如果不是第一次启动，那么按照上次消费的位置继续消费

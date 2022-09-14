@@ -1,5 +1,6 @@
 package consumer.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,13 +23,19 @@ public class consumerController {
     @Reference
     private UserProviderApiService userProviderApiService;
 
-
+    @HystrixCommand(fallbackMethod = "userErr")
     @RequestMapping(value = "user", method = RequestMethod.GET)
     public Map<String, Object> user() {
         Map map = userProviderApiService.userApi();
         return map;
     }
 
+    public Map<String, Object> userErr() {
+        HashMap hash = new HashMap<String, Object>() {{
+            put("userErr", "admin");
+        }};
+        return hash;
+    }
 
     @RequestMapping(value = "consumer", method = RequestMethod.GET)
     public Map<String, Object> consumer() {
