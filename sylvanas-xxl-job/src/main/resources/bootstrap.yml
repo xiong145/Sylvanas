@@ -1,0 +1,38 @@
+#spring:
+#  application:
+#    name: sylvanas-Xxl-Job
+#  profiles:
+#    active: @profiles.active@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: GaW4daNNp5mj4meP
+    url: jdbc:mysql://101.35.253.59:3306/nacosdb?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    username: nacosdb
+  mail:
+    host: smtp.qq.com
+    password: xxx
+    port: 25
+    properties:
+      mail:
+        smtp:
+          auth: true
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+          starttls:
+            enable: true
+            required: true
+    username: xxx@qq.com
+xxl:
+  job:
+    accessToken: ''
+    i18n: zh_CN
+    logretentiondays: 30
+    triggerpool:
+      fast:
+        max: 200
+      slow:
+        max: 100
+server:
+  port: 9423
+

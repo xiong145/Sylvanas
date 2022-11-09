@@ -16,6 +16,7 @@
         <spring-boot.version>2.7.2</spring-boot.version>
         <spring-cloud.version>2021.0.3</spring-cloud.version>
         <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version>
+        <dubbo.version>3.1.0</dubbo.version>
         <hutool.version>5.8.3</hutool.version>
     </properties>
 
@@ -71,6 +72,19 @@
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
             </dependency>
+
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-bom</artifactId>
+                <version>${dubbo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+
+
+
         </dependencies>
     </dependencyManagement>
 
