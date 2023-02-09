@@ -26,6 +26,7 @@
         <module>sylvanas-consumer</module>
         <module>sylvanas-xxl-job</module>
         <module>sylvanas-test</module>
+        <module>cuckoo-test</module>
     </modules>
 
 

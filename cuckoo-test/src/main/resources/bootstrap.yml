@@ -1,0 +1,19 @@
+server:
+  port: 9551
+
+spring:
+  application:
+    name: cuckoo-test
+  main:
+    allow-circular-references: true
+
+dubbo:
+  application:
+    name: cuckoo-test
+  consumer:
+    check: false
+#    loadbalance: "leastactive"
+  registry:
+    address: zookeeper://zk1.ztoky56.com:5181
+#    ,zk2.ztoky56.com:5181,zk3.ztoky56.com:5181
+#    file: C:\Users\xiong\Desktop\zto\Sylvanas\cuckoo-test\cache\
