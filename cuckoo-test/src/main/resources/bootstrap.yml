@@ -14,6 +14,7 @@ dubbo:
     check: false
 #    loadbalance: "leastactive"
   registry:
-    address: zookeeper://zk1.ztoky56.com:5181
+    address: nacos://nacos1-fr5.k8s.ztoky56.com:8848
+#    address: zookeeper://zk1.ztoky56.com:5181
 #    ,zk2.ztoky56.com:5181,zk3.ztoky56.com:5181
 #    file: C:\Users\xiong\Desktop\zto\Sylvanas\cuckoo-test\cache\
