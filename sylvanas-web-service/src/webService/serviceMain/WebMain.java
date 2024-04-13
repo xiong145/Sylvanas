@@ -10,8 +10,7 @@ import java.net.Socket;
 public class WebMain {
     public WebMain() {
 
-    }
-
+    } 
     public static void main(String[] args) throws IOException {
         ServerSocket ss = new ServerSocket(9901);
         System.out.println("server is running...");

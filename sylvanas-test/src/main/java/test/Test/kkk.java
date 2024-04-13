@@ -9,7 +9,6 @@ public class kkk {
         aa.addAll(Arrays.asList("12", "23", "24", "56"));
         aa.remove("12");
         aa.removeIf(a -> a.contains("23"));
-
         aa.stream().forEach(f -> {
             System.out.println(f);
         });

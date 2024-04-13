@@ -4,9 +4,15 @@ package consumer.controller;
 //import org.apache.dubbo.config.annotation.Reference;
 
 import api.dto.HsBasicChargeItemNameDto;
+import api.dto.TradeChargeExSqlApiDto;
 import api.service.IHsBasicChargeItemApiService;
+import api.service.IHsFinChargeExApiService;
+import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.lang.Assert;
+import com.alibaba.fastjson.JSONObject;
+import com.cfne.cuckoo.fin.domain.entity.finance.HsFinAccountVO;
 import com.cfne.cuckoo.fin.domain.entity.finance.dto.FinAccountDto;
+import com.cfne.cuckoo.fin.domain.entity.finance.dto.SelectHsFinAccountDto;
 import com.cfne.cuckoo.fin.service.finance.HsFinAccountService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import lombok.extern.log4j.Log4j2;
@@ -19,9 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 import userInterface.UserProviderApiService;
 //import userInterface.UserProviderApiService;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author xiong
@@ -43,7 +47,6 @@ public class consumerController {
 //        Map map = userProviderApiService.userApi();
 //        return map;
 //    }
-
 
     @Reference(retries = 0, check = false)
     private HsFinAccountService hsFinAccountService;
@@ -68,6 +71,17 @@ public class consumerController {
         return map;
     }
 
+    @RequestMapping(value = "cuckoo1", method = RequestMethod.GET)
+    public List<HsFinAccountVO> user1() {
+        try {
+            List<SelectHsFinAccountDto> var1 = new ArrayList<>();
+            List<HsFinAccountVO> hsFinAccountVOList = hsFinAccountService.selectHsFinAccountBySiteId(var1);
+            return hsFinAccountVOList;
+        } catch (Exception e) {
+            log.error(e);
+        }
+        return null;
+    }
 
     public Map<String, Object> userErr() {
         HashMap hash = new HashMap<String, Object>() {{
@@ -83,4 +97,18 @@ public class consumerController {
         }};
         return hash;
     }
+
+
+    @Reference(retries = 0, check = false, version = "1.0.0")
+    private IHsFinChargeExApiService iHsFinChargeExApiService;
+
+    @RequestMapping(value = "cuckoo5", method = RequestMethod.GET)
+    public Map<String, Object> cuckoo5() {
+        List<TradeChargeExSqlApiDto> var1 = new ArrayList<>();
+
+        Map map = iHsFinChargeExApiService.addSqlHsFinChargeExList(var1);
+        return map;
+    }
+
+
 }

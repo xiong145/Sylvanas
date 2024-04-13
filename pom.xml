@@ -27,6 +27,8 @@
         <module>sylvanas-xxl-job</module>
         <module>sylvanas-test</module>
         <module>cuckoo-test</module>
+        <module>sylvanas-netty</module>
+        <module>cuckoo5-test</module>
     </modules>
 
 

@@ -20,7 +20,7 @@ public class consumerController {
     /**
      * dubbo调用user服务
      */
-    @Reference
+    @Reference(check = false)
     private UserProviderApiService userProviderApiService;
 
     @HystrixCommand(fallbackMethod = "userErr")
