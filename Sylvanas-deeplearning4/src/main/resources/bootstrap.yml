@@ -1,0 +1,9 @@
+#spring:
+#  application:
+#    name: sylvanas-Xxl-Job
+#  profiles:
+#    active: @profiles.active@
+
+server:
+  port: 9811
+
