@@ -42,7 +42,12 @@
         <dependency>
             <groupId>org.tensorflow</groupId>
             <artifactId>tensorflow-core-platform</artifactId>
-            <version>0.3.3</version>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+        <groupId>org.tensorflow</groupId>
+        <artifactId>tensorflow-core-api</artifactId>
+        <version>1.0.0</version>
         </dependency>
     </dependencies>
 </project>
