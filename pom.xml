@@ -31,6 +31,7 @@
         <module>sylvanas-netty</module>
         <module>cuckoo5-test</module>
         <module>sylvanas-deeplearning4</module>
+        <module>sylvanas-tensorflow</module>
     </modules>
 
 
